@@ -37,7 +37,7 @@ Construir una función que reciba un número y ordenados de manera ascendente.
 ## disminuirMatriz
 Dado una matriz de tamaño mxn aplanar en una lista aquellos elementos que sean impares, posteriormente transformarlo nuevamente una matriz cuadrada. Pueda ser que en el proceso de transforma a una matriz cuadrada sobren elementos.
 
-### Ejmplo
+### Ejemplo
 ```python
 >>> matriz = [[5,88,0], [3,69,12], [51,3,71], [4,45,29]]
 >>>disminuirMatriz(matriz)
