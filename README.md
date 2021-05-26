@@ -1,7 +1,11 @@
 # 2021-S1-portafolio3
 
+##construirNumero
 Construir una función que forme un número a partir de otro, considerando sólo los dígitos pares del número de entrada.
->>>construir(2345)     R/24
+'''
+>>>construir(2345)     
+24
+'''
 Construir una función  que reciba un número entero y retorne el dígito menor.
 >>>digitoMenor(569803)      R/0
 Construir una función que reciba un número e indique si sus dígitos están ordenados de manera descendente.
