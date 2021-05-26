@@ -1,5 +1,7 @@
 # 2021-S1-portafolio3
 
+El archivo debe llamarse **portafolio3.py**, además respetar el nombre de las funciones que más adelante se describen
+
 ## construir
 Construir una función que forme un número a partir de otro, considerando sólo los dígitos pares del número de entrada.
 
