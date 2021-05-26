@@ -49,4 +49,39 @@ def test_digitosOrdenados_4():
     assert portafolio3.digitosOrdenados(28)  == True    
     
 def test_digitosOrdenados_1():
-    assert portafolio3.digitosOrdenados(23.5)  == 'Error: Tipo de dato incorrecto'    
+    assert portafolio3.digitosOrdenados(23.5)  == 'Error: Tipo de dato incorrecto' 
+    
+#elevarNumero
+
+def test_elevarNumero_1():
+    assert portafolio3.elevarNumero(5, 3)  == 125
+    
+def test_elevarNumero_2():
+    assert portafolio3.elevarNumero(5, -1)  == "El exponente debe ser positivo y entero"
+
+def test_elevarNumero_3():
+    assert portafolio3.elevarNumero(5, 5.2)  == "El exponente debe ser positivo y entero"
+    
+def test_elevarNumero_4():
+    assert portafolio3.elevarNumero(0, -2)  == 0
+    
+#ordenarDigitos
+
+def test_ordenarDigitos_1():
+    assert portafolio3.ordenarDigitos(354)  == 345
+    
+def test_ordenarDigitos_2():
+    assert portafolio3.ordenarDigitos(354.5)  == "Error: El parámetro debe ser positivo y entero"
+    
+def test_ordenarDigitos_3():
+    assert portafolio3.ordenarDigitos(-354)  == "Error: El parámetro debe ser positivo y entero"    
+    
+def test_ordenarDigitos_4():
+    assert portafolio3.ordenarDigitos(222)  == 222
+
+def test_ordenarDigitos_5():
+    assert portafolio3.ordenarDigitos(15009)  == 159
+    
+    
+
+    
