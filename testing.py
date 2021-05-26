@@ -1,13 +1,6 @@
 import portafolio3;
 import pytest;
 
-Lista1 = [4, 8, 12]
-Lista2 = [40, 8, 12]
-Lista3 = []
-Lista4 = [40, "8", 12]
-Lista5 = [40, 8.5, 12]
-
-
 def test_construir_1():
     assert portafolio3.construir(2345) == 24   
 
@@ -82,6 +75,19 @@ def test_ordenarDigitos_4():
 def test_ordenarDigitos_5():
     assert portafolio3.ordenarDigitos(15009)  == 159
     
-    
+#disminuirMatriz
 
+m = [[5,88,0], [3,69,12], [51,3,71], [4,45,29]]
+n = [[5,89,0], [3,69,12], [51,3,71], [141,45,29]]
+l = [[5,89,0, 0], [141,45,29]]
+
+
+def test_disminuirMatriz_1():
+    assert portafolio3.disminuirMatriz(m)  == [[5,3],[69,51]]
+
+def test_disminuirMatriz_2():
+    assert portafolio3.disminuirMatriz(n)  == [[5,89,3],[69,51,3], [71,141,45]]
+    
+def test_disminuirMatriz_3():
+    assert portafolio3.disminuirMatriz(l)  == 'Error: existen vectores de diferentes tamaños'
     
