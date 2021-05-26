@@ -5,13 +5,16 @@ def test_construir_1():
     assert portafolio3.construir(2345) == 24   
 
 def test_construir_2():
-    assert portafolio3.construir(2345) == 'No hay digitos pares'     
+    assert portafolio3.construir(1135) == 'No hay digitos pares'     
     
 def test_construir_3():
     assert portafolio3.construir('ABC') == 'Error: Tipo de dato incorrecto'
     
 def test_construir_4():
     assert portafolio3.construir(125.8) == 'Error: Tipo de dato incorrecto'    
+
+def test_construir_5():
+    assert portafolio3.construir(200336) == 2006     
     
 #digitoMenor    
 
@@ -56,7 +59,7 @@ def test_elevarNumero_3():
     assert portafolio3.elevarNumero(5, 5.2)  == "El exponente debe ser positivo y entero"
     
 def test_elevarNumero_4():
-    assert portafolio3.elevarNumero(0, -2)  == 0
+    assert portafolio3.elevarNumero(0, 2)  == 0
     
 #ordenarDigitos
 
@@ -80,7 +83,6 @@ def test_ordenarDigitos_5():
 m = [[5,88,0], [3,69,12], [51,3,71], [4,45,29]]
 n = [[5,89,0], [3,69,12], [51,3,71], [141,45,29]]
 l = [[5,89,0, 0], [141,45,29]]
-
 
 def test_disminuirMatriz_1():
     assert portafolio3.disminuirMatriz(m)  == [[5,3],[69,51]]
